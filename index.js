@@ -66,9 +66,12 @@ detailsBox.innerHTML=`
           ${createElement(word.synonyms)}
         </div>
       </div>
-      <button class="btn btn-primary bg-[#422AD5] hover:bg-green-800 p-2
-       rounded-md w-[150px]">Get Started</button>
-`
+     <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn btn-primary">Complete learning</button>
+      </form>
+
+` 
 document.getElementById('word_modal').showModal();
 }
 const displayLoad=(word) => { 
